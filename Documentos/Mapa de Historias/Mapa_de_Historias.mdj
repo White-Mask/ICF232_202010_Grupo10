@@ -1,0 +1,908 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFyct41QCsDfdw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 16,
+							"top": 208,
+							"width": 121,
+							"height": 73,
+							"text": "El medico ingresa los datos del paciente."
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycuJxZysNy7w=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 16,
+							"top": 16,
+							"width": 137,
+							"height": 81
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycuLoUCsUlGE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 64,
+							"top": 24,
+							"width": 41,
+							"height": 25,
+							"text": "Epic"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycuOgyyscjkk=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 24,
+							"top": 48,
+							"width": 120,
+							"height": 25,
+							"text": "Registrar paciente"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycuX8tisncVY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 315,
+							"top": 14,
+							"width": 137,
+							"height": 81
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycuX8tisojUI=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 363,
+							"top": 22,
+							"width": 41,
+							"height": 25,
+							"text": "Epic"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycuX8tisphD4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 323,
+							"top": 46,
+							"width": 120,
+							"height": 38,
+							"text": "Visualizar imagen del paciente"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycucMeCs04QA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 771,
+							"top": 14,
+							"width": 137,
+							"height": 81
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycucMeCs1Exc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 819,
+							"top": 22,
+							"width": 41,
+							"height": 25,
+							"text": "Epic"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycucMeCs23Mo=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 779,
+							"top": 46,
+							"width": 120,
+							"height": 51,
+							"text": "Administrar información del paciente"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycue/ZitAWNg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1075,
+							"top": 13,
+							"width": 137,
+							"height": 81
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycue/ZitBSHM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1123,
+							"top": 21,
+							"width": 41,
+							"height": 25,
+							"text": "Epic"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycue/ZitCwB4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1083,
+							"top": 45,
+							"width": 120,
+							"height": 51,
+							"text": "Manipular las imágenes del paciente"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycukpLStNQr8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1515,
+							"top": 13,
+							"width": 137,
+							"height": 81
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycukpLStOrAU=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1563,
+							"top": 21,
+							"width": 41,
+							"height": 25,
+							"text": "Epic"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycukpLStPGzI=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1523,
+							"top": 45,
+							"width": 120,
+							"height": 51,
+							"text": "Modelo 3D"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycur+uitZYsE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 19,
+							"top": 112,
+							"width": 126,
+							"height": 73
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycur+uitau/o=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 56,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycur+uitbRKU=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 32,
+							"top": 144,
+							"width": 105,
+							"height": 25,
+							"text": "Crear registro"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycu4Ddit4NDo=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 161,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycu4Ddit5HK8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 198,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycu4Ddit6Klc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 176,
+							"top": 136,
+							"width": 103,
+							"height": 51,
+							"text": "Agregar información al registro"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycu4mqCuDp+Y=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 321,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycu4mqCuEcBQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 358,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycu4mqSuFuTQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 334,
+							"top": 144,
+							"width": 105,
+							"height": 25,
+							"text": "Visualización"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycu6p6SuQlJA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 465,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycu6p6SuRwDw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 502,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycu6p6SuSlXk=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 478,
+							"top": 144,
+							"width": 105,
+							"height": 38,
+							"text": "El paciente no tiene imagen"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycu7Fqiubg4g=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 609,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycu7FqiuczGA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 646,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycu7FqyudLTY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 622,
+							"top": 144,
+							"width": 105,
+							"height": 38,
+							"text": "Compara Imágenes"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycvANkCuu34U=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 769,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvANkCuvoUM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 806,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvANkCuwsBM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 782,
+							"top": 144,
+							"width": 105,
+							"height": 38,
+							"text": "Buscar imágenes"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycvANkCuxhKo=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 913,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvANkCuymDo=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 950,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvANkCuzx/c=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 926,
+							"top": 144,
+							"width": 105,
+							"height": 25,
+							"text": "Ordenar por"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycvF+aSvGDlQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1075,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvF+aivHhy4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1112,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvF+aivIDQs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1088,
+							"top": 144,
+							"width": 105,
+							"height": 25,
+							"text": "Zoom "
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycvF+aivJ3UI=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1219,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvF+aivKqhQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1256,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvF+aivLSqg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1232,
+							"top": 144,
+							"width": 105,
+							"height": 25,
+							"text": "Rotar"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycvF+aivMvU4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1363,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvF+aivNRp0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1400,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvF+aivOd4w=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1376,
+							"top": 144,
+							"width": 105,
+							"height": 38,
+							"text": "Agregar figuras a la imagen"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycvJ5uivgOoA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1518,
+							"top": 112,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvJ5uivhlP0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1555,
+							"top": 120,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycvJ5uivijtQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1531,
+							"top": 144,
+							"width": 105,
+							"height": 38,
+							"text": "Crear modelo 3D"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvNBHCvskUc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 16,
+							"top": 296,
+							"width": 121,
+							"height": 73,
+							"text": "El medico adjunta documentos del paciente."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvNfDSvxcLs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 160,
+							"top": 208,
+							"width": 121,
+							"height": 73,
+							"text": "El medico ingresa la nueva información del paciente."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvN4Byv29Ts=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 320,
+							"top": 208,
+							"width": 129,
+							"height": 77,
+							"text": "El medico necesita una opción para abrir una imagen del paciente."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvPIMyv84sw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 320,
+							"top": 294,
+							"width": 129,
+							"height": 90,
+							"text": "El medico necesita una opción para cerrar una imagen del paciente."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvRjWiwHTB8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 464,
+							"top": 210,
+							"width": 129,
+							"height": 90,
+							"text": "El medico necesita una opción para crear solicitudes de exámenes para el paciente."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvRjWiwIC+U=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 608,
+							"top": 208,
+							"width": 129,
+							"height": 103,
+							"text": "El medico necesita una opción para desplegar varias imágenes en el mismo Workspace."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvUXliwRLi8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 768,
+							"top": 207,
+							"width": 129,
+							"height": 77,
+							"text": "El medico necesita una opción para buscar por fecha los registros."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvUXliwSY4g=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 768,
+							"top": 293,
+							"width": 129,
+							"height": 90,
+							"text": "El medico necesita una opción para buscar por tipo de examen realizado."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvU99ywZT0Q=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 912,
+							"top": 207,
+							"width": 129,
+							"height": 90,
+							"text": "El medico necesita una opción para ordenar por fecha los registros."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvU99ywaW8c=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 912,
+							"top": 304,
+							"width": 129,
+							"height": 77,
+							"text": "El medico necesita una opción para ordenar por tipo de examen."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvV1JSwhlWs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1072,
+							"top": 207,
+							"width": 129,
+							"height": 90,
+							"text": "El medico necesita una opción para ampliar la\\s imagen\\es del paciente."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvV1JSwizhc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1072,
+							"top": 304,
+							"width": 129,
+							"height": 90,
+							"text": "El medico necesita una opción para reducir la\\s imagen\\es del paciente."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvaBWSwr130=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1216,
+							"top": 207,
+							"width": 129,
+							"height": 90,
+							"text": "El medico necesita una opción para rotar a la derecha la\\s imagen\\es del paciente."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvaBWSwsmPM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1216,
+							"top": 304,
+							"width": 129,
+							"height": 90,
+							"text": "El medico necesita una opción para rotar a la izquierda la\\s imagen\\es del paciente"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvbbvCwy+/0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1360,
+							"top": 208,
+							"width": 137,
+							"height": 155,
+							"text": "El medico necesita una opción para editar la imagen (poner figuras, escribir, trazar líneas, entre otros), para poder identificar mejor las anomalías. "
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvcLMiw4LWM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1520,
+							"top": 207,
+							"width": 129,
+							"height": 103,
+							"text": "El medico necesita una opción para crear un modelo 3d a partir de la\\s imagen\\es del paciente. "
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFycvcLMiw53DQ=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1664,
+							"top": 208,
+							"width": 129,
+							"height": 116,
+							"text": "El medico necesita una opción para exportar el modelo 3d a partir de la\\s imagen\\es del paciente."
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAFycwC8cyyE7ME=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1662,
+							"top": 115,
+							"width": 126,
+							"height": 72
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycwC8cyyFqwE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1699,
+							"top": 123,
+							"width": 41.7890625,
+							"height": 25,
+							"text": "Tema"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAFycwC8cyyGxsE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 1675,
+							"top": 147,
+							"width": 105,
+							"height": 38,
+							"text": "Exportar modelo 3D"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -5,6 +5,9 @@
 * Proyecto para el ramo de Ingeniería de software.
 
 ## Documentos
-Esta carpeta contiene: 
+Esta carpeta contiene:
+* Carpeta Backlog
+* Carpeta Mapa de Historias
+* Carpeta Modelo 4+1
 * El documento de visión.
 * El documento de casos de uso.
