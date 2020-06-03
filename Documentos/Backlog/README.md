@@ -1,6 +1,6 @@
 # Backlog
 Esta carpeta contiene:
 * Backlog.xlsx (Excel).
-* Imagen del Backlog
+* Imagen del backlog.
 
-![Backlog](/Documentos/Backlog/Backlog.png)
+![Backlog](Backlog.png)

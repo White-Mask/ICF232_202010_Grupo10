@@ -1,6 +1,6 @@
 # Mapa de Historias
 Esta carpeta contiene:
 * Mapa_de_Historias.mdj (StarUML).
-* Imagen del Mapa de Historias
+* Imagen del mapa de historias.
 
-<img src="/Documentos/Mapa de Historias/Mapa_de_Historias.png" width="100">
+![Mapa de Historias](Mapa_de_Historias.png)
