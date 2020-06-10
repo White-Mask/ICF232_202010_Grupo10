@@ -1,4 +1,4 @@
-<img src="/Images/logo.png" width="100">
+<img src="/Imagenes/logo.png" width="100">
 
 ## ICF232_202010_Grupo10
 # Sistema para la visualización de imágenes de pacientes de Radioterapia
