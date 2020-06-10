@@ -30,8 +30,8 @@
 							"left": 24,
 							"top": 208,
 							"width": 121,
-							"height": 73,
-							"text": "El medico ingresa los datos del paciente."
+							"height": 77,
+							"text": "Yo como médico necesito crear una consulta al paciente para poder tratarlo."
 						},
 						{
 							"_type": "RectangleView",
@@ -651,8 +651,8 @@
 							"left": 24,
 							"top": 296,
 							"width": 121,
-							"height": 73,
-							"text": "El medico adjunta documentos del paciente."
+							"height": 77,
+							"text": "Yo como médico necesito adjuntar documentos del paciente en la consulta médica."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -664,8 +664,8 @@
 							"left": 168,
 							"top": 208,
 							"width": 121,
-							"height": 73,
-							"text": "El medico ingresa la nueva información del paciente."
+							"height": 116,
+							"text": "Yo como médico necesito agregar información a la consulta médica para corregir o actualizar los datos del paciente."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -677,8 +677,8 @@
 							"left": 632,
 							"top": 208,
 							"width": 129,
-							"height": 77,
-							"text": "El medico necesita una opción para abrir una imagen del paciente."
+							"height": 90,
+							"text": "Yo como médico necesito visualizar las imágenes del paciente para planear sus tratamientos."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -688,10 +688,10 @@
 							},
 							"font": "Arial;13;0",
 							"left": 632,
-							"top": 294,
+							"top": 312,
 							"width": 129,
 							"height": 90,
-							"text": "El medico necesita una opción para cerrar una imagen del paciente."
+							"text": "Yo como médico necesito cerrar las imágenes del paciente para poder hacer otra cosa."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -704,7 +704,7 @@
 							"top": 210,
 							"width": 129,
 							"height": 90,
-							"text": "El medico necesita una opción para crear solicitudes de exámenes para el paciente."
+							"text": "Yo como médico necesito crear solicitudes de exámenes para el paciente, si este no los tiene."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -717,7 +717,7 @@
 							"top": 208,
 							"width": 129,
 							"height": 103,
-							"text": "El medico necesita una opción para desplegar varias imágenes en el mismo Workspace."
+							"text": "Yo como médico necesito visualizar varias imágenes al mismo tiempo para compararlas y poder tomar la mejor decisión."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -729,8 +729,8 @@
 							"left": 920,
 							"top": 207,
 							"width": 129,
-							"height": 77,
-							"text": "El medico necesita una opción para buscar por fecha los registros."
+							"height": 116,
+							"text": "Yo como médico necesito buscar las consultas médicas del paciente por fecha para encontrarla con mayor facilidad."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -740,10 +740,10 @@
 							},
 							"font": "Arial;13;0",
 							"left": 920,
-							"top": 293,
+							"top": 336,
 							"width": 129,
-							"height": 90,
-							"text": "El medico necesita una opción para buscar por tipo de examen realizado."
+							"height": 116,
+							"text": "Yo como médico necesito buscar las imágenes por del paciente por tipo de examen realizado para encontrarla con mayor facilidad."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -755,8 +755,8 @@
 							"left": 472,
 							"top": 207,
 							"width": 129,
-							"height": 90,
-							"text": "El medico necesita una opción para ordenar por fecha los registros."
+							"height": 103,
+							"text": "Yo como médico necesito ordenar las consultas médicas por fecha para poder encontrarlas con mayor facilidad."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -766,10 +766,10 @@
 							},
 							"font": "Arial;13;0",
 							"left": 472,
-							"top": 304,
+							"top": 320,
 							"width": 129,
-							"height": 77,
-							"text": "El medico necesita una opción para ordenar por tipo de examen."
+							"height": 116,
+							"text": "Yo como médico necesito ordenar las consultas médicas por tipo de examen para poder encontrarlas con mayor facilidad."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -781,8 +781,8 @@
 							"left": 1064,
 							"top": 207,
 							"width": 129,
-							"height": 90,
-							"text": "El medico necesita una opción para ampliar la\\s imagen\\es del paciente."
+							"height": 103,
+							"text": "Yo como médico necesito ampliar el tamaño de las imágenes del paciente para verlas con más detalle."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -792,10 +792,10 @@
 							},
 							"font": "Arial;13;0",
 							"left": 1064,
-							"top": 304,
+							"top": 320,
 							"width": 129,
 							"height": 90,
-							"text": "El medico necesita una opción para reducir la\\s imagen\\es del paciente."
+							"text": "Yo como médico necesito reducir el tamaño de las imágenes del paciente."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -807,8 +807,8 @@
 							"left": 1208,
 							"top": 207,
 							"width": 129,
-							"height": 90,
-							"text": "El medico necesita una opción para rotar a la derecha la\\s imagen\\es del paciente."
+							"height": 116,
+							"text": "Yo como médico necesito rotar a la derecha las imágenes del paciente para ver de otra perspectiva las imágenes."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -818,10 +818,10 @@
 							},
 							"font": "Arial;13;0",
 							"left": 1208,
-							"top": 304,
+							"top": 336,
 							"width": 129,
-							"height": 90,
-							"text": "El medico necesita una opción para rotar a la izquierda la\\s imagen\\es del paciente"
+							"height": 116,
+							"text": "Yo como médico necesito rotar a la izquierda las imágenes del paciente para ver de otra perspectiva las imágenes."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -834,7 +834,7 @@
 							"top": 208,
 							"width": 137,
 							"height": 155,
-							"text": "El medico necesita una opción para editar la imagen (poner figuras, escribir, trazar líneas, entre otros), para poder identificar mejor las anomalías. "
+							"text": "Yo como médico necesito editar las imágenes del paciente, agregándoles figuras para destacar algunas zonas."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -847,7 +847,7 @@
 							"top": 207,
 							"width": 129,
 							"height": 103,
-							"text": "El medico necesita una opción para crear un modelo 3d a partir de la\\s imagen\\es del paciente. "
+							"text": "Yo como médico necesito crear un modelo 3D a partir de las imágenes del paciente."
 						},
 						{
 							"_type": "UMLNoteView",
@@ -860,7 +860,7 @@
 							"top": 208,
 							"width": 129,
 							"height": 116,
-							"text": "El medico necesita una opción para exportar el modelo 3d a partir de la\\s imagen\\es del paciente."
+							"text": "Yo como médico necesito exportar el modelo 3D del paciente, para luego poder imprimirlo."
 						},
 						{
 							"_type": "RectangleView",
