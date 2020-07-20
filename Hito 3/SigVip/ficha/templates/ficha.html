@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block pagina %}
+    <h1>Ficha del paciente</h1>
+{% endblock%}
+{% block content %}
+<div class="col-12">
+    <a class="btn btn-primary btn-lg" href="create/" role="button">Agregar consulta medica</a>
+    <a class="btn btn-primary btn-lg" href="update/" role="button">Actualizar paciente</a>
+    <a class="btn btn-primary btn-lg" href="create_tratamiento/" role="button">Agregar tratamiento </a>
+    <a class="btn btn-primary btn-lg" href="create_receta/" role="button">Agregar receta </a>
+    <a class="btn btn-primary btn-lg" href="/pacientes" role="button">atras</a>
+</div>
+<div class="container">
+    <div class="row mt-5 justify-content-center">
+{% for consultamedica in fichas %}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <strong><h5 class="card-title">{{ consultamedica.tema }}</h5></strong>
+                <p class="card-text">nombre: {{ consultamedica.rut.nombre }} {{ consultamedica.rut.apellido }}</p>
+                <p class="card-text">Paciente: {{ consultamedica.rut }}</p>
+                <p class="card-text">Doctor: {{ consultamedica.doctor }}</p>
+                <p class="card-text">Fecha: {{ consultamedica.fecha }}</p>
+                <a href="detalle/{{consultamedica.id}}" class="card-link">Abrir</a>
+            </div>
+        </div>
+{% endfor %}
+    </div>
+</div>
+{% include "footer.html" %}
+{% endblock %}

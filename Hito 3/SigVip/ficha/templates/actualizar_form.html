@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block pagina %}
+<h1>Consulta medica</h1>
+{% endblock %}
+{% block content %}
+<div id="consulta_form" class="container">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table class="table table-borderless">
+            {{form.as_table}}
+        </table>
+        <a class="btn btn-primary btn-lg" href="{{request.META.HTTP_REFERER}}" role="button">Cancelar</a>
+        <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="Actualizar()"></input>
+    </form>
+</div>
+{% endblock %}

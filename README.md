@@ -15,3 +15,9 @@ Esta carpeta contiene:
 ## Videos
 Esta carpeta contiene:
 * Presentación del proyecto.mp4 (Hito 2).
+
+## Hito 3
+Esta carpeta contiene:
+* Carpeta SigVip (pagina web).
+* El documento de caso de pruebas (.xlsx)
+* El archivo README.md
