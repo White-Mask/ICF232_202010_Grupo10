@@ -11,12 +11,15 @@ class HomeFichaView(LoginRequiredMixin,TemplateView):
     def get(self,request,**kwargs):
         rut=kwargs["rut"]
         fromdate = request.GET.get("fromdate")
-        post = ConsultaMedica.fichas.all()
         if fromdate:
             post = ConsultaMedica.fichas.filter(Q(fecha = fromdate) & Q(rut_id=rut)).distinct
-            return render(request,'ficha.html',{'fichas':post})
         else:
-            return render(request,'ficha.html',{'fichas':ConsultaMedica.fichas.filter(rut_id=rut)})
+            orden = request.GET.get("orden")
+            if orden == 'descendente':
+                post = ConsultaMedica.fichas.filter(rut_id=rut).order_by('fecha').distinct
+            else:
+                post = ConsultaMedica.fichas.filter(rut_id=rut).distinct
+        return render(request,'ficha.html',{'fichas':post})
 
 class DetalleConsultaView(LoginRequiredMixin,TemplateView):
     def get(self,request,**kwargs):

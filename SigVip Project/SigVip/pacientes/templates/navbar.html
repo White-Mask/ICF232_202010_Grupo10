@@ -14,7 +14,20 @@
                 <a class="nav-link" href="{% url 'logout' %}">Logout</a>
             </li>
         </ul>
-        <span class="navbar-text">
+        <div class="search" style="width: fit-content;margin-left: 35%">
+            <form method="GET">
+                <div id="custom-search-input">
+                    <div class="input-group">
+                        <input type="text" class="form-control btn-lg" placeholder="Buscar..." name="buscar"
+                            value="{{request.GET.buscar}}">
+                        <span class="input-group-list">
+                            <button style="background-color: #5ad524;border: none;height: 44px;" type="submit"><i class="fa fa-search btn-lg"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <span class="navbar-text" style="width: fit-content;margin-left: 2%">
             {{user.first_name}} {{user.last_name}}
         </span>
         {% else %}

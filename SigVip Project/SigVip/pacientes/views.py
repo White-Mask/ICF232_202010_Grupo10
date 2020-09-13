@@ -12,7 +12,6 @@ class HomePageView(LoginRequiredMixin,TemplateView):
 class HomePacienteView(LoginRequiredMixin,TemplateView):
     def get(self,request,**kwargs):
         queryset = request.GET.get('buscar')
-        print(queryset)
         post = Paciente.pacientes.all()
         try:
             queryset0,queryset1 = queryset.split(" ")

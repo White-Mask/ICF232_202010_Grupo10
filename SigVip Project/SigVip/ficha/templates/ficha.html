@@ -7,8 +7,15 @@
 <div class="container"></div>
     <div class="row">
         <a style="width: fit-content;" class="btn btn-primary btn-lg" href="create/" role="button">Agregar consulta medica</a>
-        <a style="width: fit-content;margin-left: 2%" class="btn btn-primary btn-lg" href="update/" role="button">Actualizar paciente</a>
-        <div class="search" style="width: fit-content;margin-left: 26%">
+        <a style="width: fit-content;margin-left: 1%" class="btn btn-primary btn-lg" href="update/" role="button">Actualizar paciente</a>
+        <form method="GET" style="width: fit-content;margin-left: 2%">
+            <select  class="btn-lg" name="orden">
+                <option value="Ascendente" name="Ascendente" >Ascendente</option>
+                <option value="descendente" name="Descendente" >descendente</option>
+            </select>
+            <input type="submit" class="btn-success btn-primary btn-lg" value="Buscar">
+        </form>
+        <div class="search" style="width: fit-content;margin-left: 5%">
             <form method="GET">
                 <div id="custom-search-input">
                     <div class="input-group">
