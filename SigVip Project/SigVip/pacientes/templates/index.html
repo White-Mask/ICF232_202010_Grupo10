@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block pagina %}
+  <h1>Bienvenido {{user.first_name}} {{user.last_name}}</h1>
+{% endblock %}
+{% block content %}
+<br/>
+<br/>
+{% if user.is_authenticated %}
+{% else %}
+{% endif %}
+{% include "footer.html" %}
+{% endblock %}

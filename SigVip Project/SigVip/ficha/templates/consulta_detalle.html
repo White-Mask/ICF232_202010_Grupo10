@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block pagina %}
+    <h1 class="display-4">{{detalle.tema}}</h1>
+{% endblock%}
+{% block content %}
+<div class="jumbotron">
+    <p class="lead">Nombre: {{detalle.rut.nombre}} {{detalle.rut.apellido}}</p>
+    <p class="lead">Rut: {{detalle.rut}}</p>
+    <p class="lead">Doctor: {{detalle.doctor}}</p>
+    <p class="lead">Examen: {{detalle.tratamiento.examen}}</p>
+    <p class="lead">Diagnostico: {{detalle.diagnostico}}</p>
+    <p class="lead">Tratamiento: {{detalle.tratamiento}}</p>
+    <p class="lead">Medicamento: {{detalle.tratamiento.receta.medicamento}}</p>
+    <p class="lead">Detalle: {{detalle.tratamiento.receta.medicamento}}</p>
+    <hr class="my-4">
+    <p>{{detalle.fecha}}</p>
+</div>
+<a class="btn btn-primary btn-lg" href="/ficha/{{detalle.rut_id}}" role="button">atras</a>
+<a class="btn btn-primary btn-lg" href="update/" role="button">Actualizar consulta</a>
+<a class="btn btn-primary btn-lg" href="delete/" role="button">Eliminar</a>
+{% include "footer.html" %}
+{% endblock %}
