@@ -1,5 +1,5 @@
 <img align="right" src="Imagenes/logo.png" width="100">
-<img src="imagenes/SigVIP_Logo.jpg" width="100">
+<img src="Imagenes/SigVIP_Logo.jpg" width="100">
 
 # Sistema para la visualización de imágenes de pacientes de Radioterapia
 ## ICF232_202010_Grupo10
