@@ -1,4 +1,5 @@
-<img src="Imagenes/logo.png" width="100">
+<img align="right" src="Imagenes/logo.png" width="100">
+<img src="imagenes/SigVIP_Logo.jpg" width="100">
 
 # Sistema para la visualización de imágenes de pacientes de Radioterapia
 ## ICF232_202010_Grupo10
@@ -6,10 +7,10 @@
 
 ## Documentos 📂
 Esta carpeta contiene:
-* Carpeta Backlog
-* Carpeta Mapa de Historias
-* Carpeta Modelo 4+1
-* Carpeta Diseño caso de pruebas
+* Carpeta [Backlog](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/Documentos/Backlog)
+* Carpeta [Mapa de Historias](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/Documentos/Mapa%20de%20Historias)
+* Carpeta [Modelo 4+1](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/Documentos/Modelo%204%2B1)
+* Carpeta [Diseño caso de pruebas](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/Documentos/Dise%C3%B1o%20caso%20de%20pruebas)
     * El documento de caso de pruebas (.xlsx)
 * El documento de visión.
 * El documento de casos de uso.
@@ -20,5 +21,5 @@ Esta carpeta contiene:
 
 ## SigVip Project 🚧
 Esta carpeta contiene:
-* Carpeta SigVip (pagina web).
-* El archivo README.md
+* Carpeta [SigVip Project](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/SigVip%20Project)
+* El archivo [README.md](https://github.com/White-Mask/ICF232_202010_Grupo10/blob/master/SigVip%20Project/README.md)
