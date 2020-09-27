@@ -50,6 +50,7 @@ class MainWindow(Frame):
         menubar.add_cascade(label="File", menu=filemenu)
         filemenu.add_command(label="Open File...", command=self.on_open)
         filemenu.add_command(label="Open Folder...", command=self.open_dir)
+        filemenu.add_command(label="Close File", command=self.close_image)
         
         filemenu.add_separator()
         filemenu.add_command(label="Exit", command=self.on_exit)
@@ -70,6 +71,9 @@ class MainWindow(Frame):
         newsize = "{}x{}".format(width, height)
         self.parent.geometry(newsize)
         self.parent.minsize(self.image.width, self.image.height + StatusBar.height)
+
+    def close_image(self):
+        self.canvas.delete('all')
 
     def resize(self, event):
         if self.image is None:
