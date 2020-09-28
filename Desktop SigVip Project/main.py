@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter.filedialog import askopenfilenames, askdirectory
+from tkinter import Scrollbar
 import pydicom as dicom
 import PIL.Image
 import PIL.ImageTk
@@ -38,6 +39,10 @@ class MainWindow(Frame):
         self.canvas.bind("<Button-2>", self.on_mouse_wheel_down)
         self.canvas.bind("<ButtonRelease-2>", self.on_mouse_wheel_up)
         #  self.canvas.bind("<Configure>", self.resize)
+
+        #Data
+        self.gg = LabelFrame(self.parent, bd=0, highlightthickness=0)
+        self.gg.pack(side=BOTTOM)
         
         self.status = StatusBar(self.parent)
         self.status.pack(side=BOTTOM, fill=X)
@@ -48,10 +53,14 @@ class MainWindow(Frame):
 
         filemenu = Menu(menubar, tearoff=False, bd=0)
         menubar.add_cascade(label="File", menu=filemenu)
-        filemenu.add_command(label="Open File...", command=self.on_open)
-        filemenu.add_command(label="Open Folder...", command=self.open_dir)
-        filemenu.add_command(label="Close File", command=self.close_image)
-        
+        filemenu.add_command(label="Open File...", accelerator = 'Control-o', command=self.on_open)
+        filemenu.add_command(label="Open Folder...", accelerator = 'Control-k', command=self.open_dir)
+        filemenu.add_command(label="Close File", accelerator = 'Control-w', command=self.close_image)
+
+        self.parent.bind_all('<Control-o>', self.on_open)
+        self.parent.bind_all('<Control-k>', self.open_dir)
+        self.parent.bind_all('<Control-w>', self.close_image)
+
         filemenu.add_separator()
         filemenu.add_command(label="Exit", command=self.on_exit)
 
@@ -72,8 +81,9 @@ class MainWindow(Frame):
         self.parent.geometry(newsize)
         self.parent.minsize(self.image.width, self.image.height + StatusBar.height)
 
-    def close_image(self):
+    def close_image(self,event=None):
         self.canvas.delete('all')
+        #self.details.grid_forget(self)
 
     def resize(self, event):
         if self.image is None:
@@ -101,7 +111,7 @@ class MainWindow(Frame):
 
             self.show_image(self.imager.get_current_image())
 
-    def on_open(self):
+    def on_open(self,event = None):
         filenames = askopenfilenames(filetypes=(("DICOM files", "*.dcm"),("All files", "*.*")))
 
         datasets = []
@@ -113,9 +123,10 @@ class MainWindow(Frame):
                 filenames.remove(file)
 
         self.imager = Imager(datasets)
+        self.dicom_details(datasets)
         self.show_image(self.imager.get_current_image())
 
-    def open_dir(self):
+    def open_dir(self,event = None):
         f = askdirectory()
 
         os.chdir(f)
@@ -143,7 +154,50 @@ class MainWindow(Frame):
                 pass
 
         self.imager = Imager(datasets)
+        self.dicom_details(datasets)
         self.show_image(self.imager.get_current_image())
+
+    def dicom_details(self, datasets):
+        scrollbar = Scrollbar(self.gg)
+        scrollbar.grid(row=0, column=1, sticky='ns')
+
+        details = Listbox(self.gg, width=200, height=5, yscrollcommand=scrollbar.set)
+        details.grid(row=0, column=0, sticky='ns')
+        scrollbar.config(command = details.yview)
+
+        # Mostrar informacion de las imagenes.
+        try:
+            details.insert(END,'Patient Name: '+str(datasets[0].PatientName)) # Patient Name
+        except:
+            details.insert(END,'Patient Name: Anonymous')
+        try:
+            details.insert(END,'Patient ID: '+str(datasets[0].PatientID)) # Patient ID
+        except:
+            details.insert(END,'Patient ID: Unknown')
+        try:
+            details.insert(END,'Patient Age: '+str(datasets[0].PatientAge)) # Patient Age
+        except:
+            details.insert(END,'Patient Age: Unknown')
+        try:
+            details.insert(END,'Patient Sex: '+str(datasets[0].PatientSex)) # Patient Sex
+        except:
+            details.insert(END,'Patient Sex: Unknown')
+        try:
+            details.insert(END,'Institution: '+str(datasets[0].InstitutionName)) # InstitutionName
+        except:
+            details.insert(END,'Institution: Unknown')
+        try:
+            details.insert(END,'Date: '+str(datasets[0].InstanceCreationDate)) # Date
+        except:
+            details.insert(END,'Date: Unknown')
+        try:
+            details.insert(END,'Modality: '+str(datasets[0].Modality)) # Modality
+        except:
+           details.insert(END,'Modality: Unknown')
+        try:
+            details.insert(END,'Manufacturer: '+str(datasets[0].Manufacturer)) # Manufacturer
+        except:
+            details.insert(END,'Manufacturer: Unknown')
         
     def on_exit(self):
         self.quit()
@@ -233,7 +287,7 @@ class StatusBar(Frame):
 def main():
     root = Tk()
     root.minsize(1000, 600)
-    root.geometry("600x400+150+25")
+    root.geometry("1000x600+150+25")
     root.iconbitmap('img/favicon_96.ico')
     app = MainWindow(root)
 
