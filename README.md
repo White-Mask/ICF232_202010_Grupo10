@@ -19,7 +19,12 @@ Esta carpeta contiene:
 Esta carpeta contiene:
 * Presentación del proyecto.mp4 (Hito 2).
 
-## SigVip Project 🚧
+## Web SigVip Project 🚧
 Esta carpeta contiene:
-* Carpeta [SigVip Project](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/SigVip%20Project)
-* El archivo [README.md](https://github.com/White-Mask/ICF232_202010_Grupo10/blob/master/SigVip%20Project/README.md)
+* Carpeta [Web SigVip Project](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/Web%20SigVip%20Project)
+* El archivo [README.md](https://github.com/White-Mask/ICF232_202010_Grupo10/blob/master/Web%20SigVip%20Project/README.md)
+
+## Desktop SigVip Project 🚧
+Esta carpeta contiene:
+* Carpeta [Desktop SigVip Project](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/Desktop%20SigVip%20Project)
+* El archivo [README.md](https://github.com/White-Mask/ICF232_202010_Grupo10/blob/master/Desktop%20SigVip%20Project/README.md)

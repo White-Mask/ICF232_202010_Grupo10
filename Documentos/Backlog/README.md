@@ -12,5 +12,7 @@ Esta carpeta contiene:
 ![Backlog](Backlog.png) 
 # Sprint 1 (Primer semestre). ✅
 ![Sprint_1](Pri_semestre_Sprint_1.png)
-# Sprint 1 (Segundo semestre). 🚧
+# Sprint 1 (Segundo semestre). ✅
 ![Sprint_2](Seg_semestre_Sprint_1.png)
+# Sprint 2 (Segundo semestre). ⚠️✋
+![Sprint_3](Seg_semestre_Sprint_2.png)
