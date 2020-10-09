@@ -15,8 +15,8 @@ urlpatterns = [
     url(r'^(?P<pk>\d+)/update/$',views.PacienteUpdate.as_view(success_url='pacientes/'),name='paciente_update'),
     re_path(r'^(?P<fk>\d+)/detalle/(?P<pk>\d+)/?update/$',views.ConsultaUpdate.as_view(success_url='pacientes/'),name='consulta_update'),
     re_path(r'^(?P<fk>\d+)/detalle/(?P<codigo>\d+)/update/(?P<pk>\d+)/?$',views.TratamientoUpdate.as_view(success_url='pacientes/'),name='tratamiento_update'),
-    re_path(r'^(?P<fk>\d+)/detalle/(?P<codigo>(\d+))/update/(?P<tratamiento_id>(\d+))/(?P<pk>\d+)/?$',views.ExamenUpdate.as_view(success_url='pacientes/'),name='examen_update'),
-    re_path(r'^(?P<fk>\d+)/detalle/(?P<codigo>(\d+))/update/(?P<tratamiento_id>(\d+))/(?P<pk>\d+)/?$',views.RecetaUpdate.as_view(success_url='pacientes/'),name='receta_update'),
+    re_path(r'^(?P<fk>\d+)/detalle/(?P<codigo>(\d+))/update/(?P<tratamiento_id>(\d+))/update-examen/(?P<pk>\d+)/?$',views.ExamenUpdate.as_view(success_url='pacientes/'),name='examen_update'),
+    re_path(r'^(?P<fk>\d+)/detalle/(?P<codigo>(\d+))/update/(?P<tratamiento_id>(\d+))/update-receta/(?P<pk>\d+)/?$',views.RecetaUpdate.as_view(success_url='pacientes/'),name='receta_update'),
     ###DELETE
     re_path(r'^(?P<fk>\d+)/detalle/(?P<pk>(\d+))/?delete/$',views.ConsultaDelete.as_view(success_url='pacientes/'),name='consulta_delete'),
 ]

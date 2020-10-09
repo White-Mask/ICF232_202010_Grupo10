@@ -16,6 +16,6 @@
         <input type="submit" class="btn btn-primary" value="Confirmar borrado" onclick="Eliminar()">
     </form>
 </div>
-<a class="btn btn-primary btn-lg" href="{{request.META.HTTP_REFERER}}" role="button">atras</a>
+<a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">atras</a>
 {% include "footer.html" %}
 {% endblock %}

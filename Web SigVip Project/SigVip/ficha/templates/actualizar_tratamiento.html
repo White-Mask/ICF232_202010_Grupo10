@@ -9,10 +9,10 @@
         <table class="table table-borderless">
             {{form.as_table}}
         </table>
-        <a class="btn btn-primary btn-lg" href="{{request.META.HTTP_REFERER}}" role="button">Cancelar</a>
+        <a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">Cancelar</a>
         <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="CrearTratamiento()"></input>
-        <a class="btn btn-primary btn-lg" href="{{object.examen_id}}/" role="button">Actualizar examen </a>
-        <a class="btn btn-primary btn-lg" href="{{object.receta_id}}/" role="button">Actualizar receta </a>
+        <a class="btn btn-primary btn-lg" href="update-examen/{{object.examen_id}}/" role="button">Actualizar examen </a>
+        <a class="btn btn-primary btn-lg" href="update-receta/{{object.receta_id}}/" role="button">Actualizar receta </a>
     </form>
 </div>
 {% endblock %}

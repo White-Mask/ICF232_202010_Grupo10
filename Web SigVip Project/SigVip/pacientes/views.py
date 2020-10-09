@@ -18,8 +18,7 @@ class HomePacienteView(LoginRequiredMixin,TemplateView):
 
             if queryset0:
                 post = Paciente.pacientes.filter(
-                    Q(rut = queryset0) | Q(nombre = queryset0) | 
-                    Q(apellido = queryset1) | (Q(nombre = queryset0) & Q(apellido = queryset1)) ).distinct
+                    ( Q(nombre = queryset0) & Q(apellido = queryset1)) ).distinct
         except:
             if queryset:
                 post = Paciente.pacientes.filter(Q(rut = queryset) | Q(nombre = queryset) | Q(apellido = queryset)).distinct
