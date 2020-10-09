@@ -25,7 +25,7 @@ def mkchrt():
         with plt.style.context('fivethirtyeight'):
             print('si')
             plt.plot(df["Fecha"],df["Esperado"],label="Esperado")
-            #plt.xticks(range(3,29),rotation=60)
+            plt.xticks(rotation=60)
             #plt.xticks(dias,rotation=60)
             plt.yticks(range(0,Hpoints[0]+1))
             plt.xlabel("\n Día en el Sprint")
@@ -65,18 +65,18 @@ def mkpoints():
 
     top = Toplevel(root)
     ##### start the proyect #####
-    star_label = Label(top,text="Start")
+    star_label = Label(top,text="Inicio del Sprint")
     star_label.pack()
     star_cal = DateEntry(top)
     star_cal.pack(pady=20)
 
     ##### finish the proyect #####
-    finish_label = Label(top,text="finish")
+    finish_label = Label(top,text="Entrega del Sprint")
     finish_label.pack()
     finish_cal = DateEntry(top)
     finish_cal.pack(pady=20)
 
-    info_points_label = Label(top,text="Número total de putos del Sprint")
+    info_points_label = Label(top,text="Total de puntos del Sprint")
     info_points_label.pack()
     entry_points = Entry(top)
     entry_points.pack(pady=5)
@@ -108,7 +108,7 @@ def mkidealwk():
 
     ##### Total points #####
     top = Toplevel(root)
-    Historia_label = Label(top,text="Ingresa la cantidad de puntos que tiene la historia")
+    Historia_label = Label(top,text="Ingresar la cantidad de puntos que tiene la historia")
     Historia_label.pack()
     Historia_box = Entry(top)
     Historia_box.pack(pady=5)
@@ -138,14 +138,20 @@ esperado = []
 Hpoints = []
 
 ##### start the proyect #####
-startdate_label = Label(root,text="Start")
+starttitulo_label = Label(root,text="Fecha de inicio")
+starttitulo_label.pack()
+startdate_label = Label(root,text="")
 startdate_label.pack()
 
 ##### finish the proyect #####
-finishdate_label = Label(root,text="finish")
+finishtitulo_label = Label(root,text="Fecha de entrega")
+finishtitulo_label.pack()
+finishdate_label = Label(root,text="")
 finishdate_label.pack()
 
 ##### Total points #####
+pointstitulo_label = Label(root,text="Puntos del Sprint")
+pointstitulo_label.pack()
 points_label = Label(root,text="")
 points_label.pack()
 
