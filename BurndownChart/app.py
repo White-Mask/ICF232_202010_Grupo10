@@ -10,13 +10,23 @@ def mkchrt():
         points = int(points_label.cget("text"))
         if points == 0:
             file = open("burndownchart.csv","w")
-            file.write('Fecha,Esperado\n')
+            file.write('Fecha,Esperado,Actual\n')
             for i in range(len(dias)):
-                if len(Hpoints) <= i:
-                   file.write(str(dias[i])+',NaN\n')
+                if len(DHpoints) > i:
+                    print(DHpoints[i])
+                    if len(Hpoints) <= i:
+                        file.write(str(dias[i])+',NaN,'+str(DHpoints[i])+'\n')
+                    else:
+                        if Hpoints[i] >= 0:
+                            file.write(str(dias[i])+','+str(Hpoints[i])+','+str(DHpoints[i])+'\n')
                 else:
-                    if Hpoints[i] >= 0:
-                         file.write(str(dias[i])+','+str(Hpoints[i])+'\n')
+                    if len(Hpoints) <= i:
+                        file.write(str(dias[i])+',NaN,NaN'+'\n')
+                    else:
+                        if Hpoints[i] >= 0:
+                            file.write(str(dias[i])+','+str(Hpoints[i])+',NaN'+'\n')
+                    
+                
         file.close()
         df = pd.read_csv("burndownchart.csv")
         print(Hpoints[0])
@@ -25,6 +35,7 @@ def mkchrt():
         with plt.style.context('fivethirtyeight'):
             print('si')
             plt.plot(df["Fecha"],df["Esperado"],label="Esperado")
+            plt.plot(df["Fecha"],df["Actual"],label="Real")
             plt.xticks(rotation=60)
             #plt.xticks(dias,rotation=60)
             plt.yticks(range(0,Hpoints[0]+1))
@@ -38,10 +49,11 @@ def mkchrt():
         messagebox.showinfo("Error","Aun quedan puntos de historias no asignados.\nPor favor, asigne esos puntos a un dia.")
 
 def mkpoints():
-    def save_data(total_points,esperado,dias):
+    def save_data(total_points,esperado,team_work,dias):
         total_points = int(entry_points.get())
         if total_points > 0:
             Hpoints.append(total_points)
+            DHpoints.append(total_points)
 
             start=star_cal.get_date()
             end=finish_cal.get_date()
@@ -54,6 +66,7 @@ def mkpoints():
             print(dias)
 
             esperado.append(start)
+            team_work.append(start)
             startdate_label.configure(text=start)
             finishdate_label.configure(text=end)
             points_label.configure(text=total_points)
@@ -82,7 +95,7 @@ def mkpoints():
     entry_points.pack(pady=5)
     
     ##### save button #####
-    save_button = Button(top,text="Guardar", command=lambda:save_data(Hpoints,esperado,dias))
+    save_button = Button(top,text="Guardar", command=lambda:save_data(Hpoints,esperado,team_work,dias))
     save_button.pack(pady=20)
     
 def mkidealwk():
@@ -125,6 +138,43 @@ def mkidealwk():
     save_button = Button(top,text="Guardar", command=lambda:prosesado(points,esperado))
     save_button.pack(pady=20)
 
+def adownwk():
+    def prosesado(maxpts,team_work):
+        DoneHpoint = Historia_terminadas_box.get()
+        dhdate = h_terminada_date_cal.get_date()
+        if maxpts > 0:
+            maxpts = int(maxpts)-int(DoneHpoint)
+            diferencia = dhdate - team_work[len(team_work)-1]
+            print(diferencia)
+            for trabajo_terminado in range(diferencia.days-1):
+                DHpoints.append(DHpoints[len(DHpoints)-1])
+            DHpoints.append(maxpts)
+            team_work.append(dhdate)
+
+            print(DHpoints)
+            top.destroy()
+        else:
+            messagebox.showinfo("Error","Error.\nVerifica si los puntos fueron ingresados o si los puntos ingresados son los correctos.")
+            top.destroy()
+    ##### add done points #####
+    top = Toplevel(root)
+    Historia_terminadas_label = Label(top,text="Ingresar el numero de puntos que tenia la historia")
+    Historia_terminadas_label.pack()
+    Historia_terminadas_box = Entry(top)
+    Historia_terminadas_box.pack(pady=5)
+
+    ##### Fecha de la Hitoria #####
+    h_terminada_date_label = Label(top,text="Fecha")
+    h_terminada_date_label.pack()
+    h_terminada_date_cal = DateEntry(top)
+    h_terminada_date_cal.pack(pady=20)
+
+    maxpts = DHpoints[len(DHpoints)-1]
+    print(maxpts)
+    ##### save button #####
+    save_button = Button(top,text="Guardar", command=lambda:prosesado(maxpts,team_work))
+    save_button.pack(pady=20)
+
 def quit():
     root.destroy()
 
@@ -135,7 +185,9 @@ root.geometry("400x400")
 now = datetime.datetime.now()
 dias = []
 esperado = []
+team_work = []
 Hpoints = []
+DHpoints = []
 
 ##### start the proyect #####
 starttitulo_label = Label(root,text="Fecha de inicio")
@@ -162,6 +214,10 @@ mkchrt_button.pack(pady=20)
 ##### make perfect work button #####
 ideal_work_button = Button(root,text="Seleccionar dia de trabajo", command=mkidealwk)
 ideal_work_button.pack(pady=10)
+
+##### add team points button #####
+team_work_button = Button(root,text="Agregar agregar reporte semanal", command=adownwk)
+team_work_button.pack(pady=10)
 
 ##### make chart button #####
 mkchrt_button = Button(root,text="Crear el grafico", command=mkchrt)
