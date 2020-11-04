@@ -28,3 +28,9 @@ Esta carpeta contiene:
 Esta carpeta contiene:
 * Carpeta [Desktop SigVip Project](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/Desktop%20SigVip%20Project)
 * El archivo [README.md](https://github.com/White-Mask/ICF232_202010_Grupo10/blob/master/Desktop%20SigVip%20Project/README.md)
+
+## Trello 📝
+* Link de acceso al [SIGVIP Trello](https://trello.com/b/GpgYn9OR/sigvip)
+
+## Hito 2
+* Reporte sprint 2 [Hito 2](https://github.com/White-Mask/ICF232_202010_Grupo10/tree/master/Hito_2.docx)
