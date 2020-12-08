@@ -3,14 +3,17 @@
     <h1>Paciente</h1>
 {% endblock %}
 {% block content %}
-<div id="paciente_form" class="container">
-    <form action="" method="POST">
-        {% csrf_token %}
-            <table class="table table-borderless">
-                {{form.as_table}}
-            </table>
-            <a class="btn btn-primary btn-lg" href="{{request.META.HTTP_REFERER}}" role="button">Cancelar</a>
-            <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="CrearPaciente()"></input>
-    </form>
+<div class="container">
+    <br>
+    <div class="card">
+        <form action="" method="POST" class="card-body">
+            {% csrf_token %}
+                <table class="table table-borderless card">
+                    {{form.as_table}}
+                </table>
+                <a class="btn btn-danger btn-lg" href="{{request.META.HTTP_REFERER}}" role="button">Cancelar</a>
+                <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="CrearPaciente()"></input>
+        </form>
+    </div>
 </div>
 {% endblock %}

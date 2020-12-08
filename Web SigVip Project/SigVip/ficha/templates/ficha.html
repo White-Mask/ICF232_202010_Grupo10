@@ -33,19 +33,21 @@
 <div class="container">
     <div class="row mt-5 justify-content-center">
 {% for consultamedica in fichas %}
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <strong><h5 class="card-title">{{ consultamedica.tema }}</h5></strong>
-                <p class="card-text">nombre: {{ consultamedica.rut.nombre }} {{ consultamedica.rut.apellido }}</p>
+        <div class="container" style="width: 18rem;">
+            <div class="card">
+                <div class="card-body">
+                <u><strong><h3 class="card-title">{{ consultamedica.tema }}</h3></strong></u>
+                <p class="card-text">Nombre: {{ consultamedica.rut.nombre }} {{ consultamedica.rut.apellidoP }} {{ consultamedica.rut.apellidoM }}</p>
                 <p class="card-text">Paciente: {{ consultamedica.rut }}</p>
-                <p class="card-text">Doctor: {{ consultamedica.doctor }}</p>
+                <p class="card-text">Doctor: {{ consultamedica.doctor.nombre }} {{ consultamedica.doctor.apellidoP }} {{ consultamedica.doctor.apellidoM }}</p>
                 <p class="card-text">Fecha: {{ consultamedica.fecha }}</p>
-                <a href="detalle/{{consultamedica.id}}/" class="card-link">Abrir</a>
+            </div>
+                <a href="detalle/{{consultamedica.id}}/" class="btn btn-primary">Abrir</a>
             </div>
         </div>
 {% endfor %}
     </div>
-    <a style="width: fit-content;margin-left: 90%" class="btn btn-primary btn-lg" href="/pacientes" role="button">atras</a>
+    <a style="width: fit-content;margin-left: 90%" class="btn btn-info btn-lg" href="/pacientes" role="button">atras</a>
 </div>
 {% include "footer.html" %}
 {% endblock %}

@@ -3,16 +3,19 @@
 <h1>Tratamiento medico</h1>
 {% endblock %}
 {% block content %}
-<div id="consulta_form" class="container">
-    <form action="" method="POST">
-        {% csrf_token %}
-        <table class="table table-borderless">
-            {{form.as_table}}
-        </table>
-        <a class="btn btn-primary btn-lg" href="javascript:history.back()" role="button">Cancelar</a>
-        <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="CrearTratamiento()"></input>
-        <a class="btn btn-primary btn-lg" href="update-examen/{{object.examen_id}}/" role="button">Actualizar examen </a>
-        <a class="btn btn-primary btn-lg" href="update-receta/{{object.receta_id}}/" role="button">Actualizar receta </a>
-    </form>
+<div class="container">
+    <br>
+    <div class="card">
+        <form action="" method="POST" class="card-body">
+            {% csrf_token %}
+            <table class="table table-borderless card">
+                {{form.as_table}}
+            </table>
+            <a class="btn btn-danger btn-lg" href="javascript:history.back()" role="button">Cancelar</a>
+            <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="CrearTratamiento()"></input>
+            <a class="btn btn-primary btn-lg" href="update-examen/{{object.examen_id}}/" role="button">Actualizar examen </a>
+            <a class="btn btn-primary btn-lg" href="update-receta/{{object.receta_id}}/" role="button">Actualizar receta </a>
+        </form>
+    </div>
 </div>
 {% endblock %}

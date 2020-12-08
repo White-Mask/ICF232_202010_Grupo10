@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-from .models import ConsultaMedica,Tratamiento,Receta,Examen
-from pacientes.models import Paciente
+from api.models import Paciente, ConsultaMedica,Tratamiento,Receta,Examen
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
 from django.urls import reverse_lazy
@@ -48,8 +47,8 @@ class RecetaCreate(CreateView):
 ####################################### UPDATE #######################################
 class PacienteUpdate(UpdateView):
     model = Paciente
-    template_name = './paciente_form.html'
-    fields = ['nombre','apellido','edad','email','telefono','direccion']
+    template_name = './actualizar_paciente_form.html'
+    fields = ['nombre','apellidoP','apellidoM','edad','email','telefono','direccion']
 
 class ConsultaUpdate(UpdateView):
     model = ConsultaMedica

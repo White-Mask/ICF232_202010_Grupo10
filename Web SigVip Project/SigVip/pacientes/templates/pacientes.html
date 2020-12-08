@@ -14,11 +14,13 @@
 <div class="container">
     <div class="row mt-5 justify-content-center">
         {% for paciente in pacientes %}
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">{{ paciente.nombre }} {{paciente.apellido}}</h5>
-                <p class="card-text">rut: {{ paciente.rut }}</p>
-                <a href="/ficha/{{paciente.id}}" class="card-link">Ir</a>
+        <div class="container" style="width: 18rem;">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ paciente.nombre }} {{paciente.apellidoP}} {{paciente.apellidoM}}</h5>
+                    <p class="card-text">RUT: {{ paciente.rut }}</p>
+                </div>
+                <a href="/ficha/{{paciente.id}}" class="btn btn-primary">Ir</a>
             </div>
         </div>
         {% endfor %}

@@ -37,6 +37,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+#   'cloudinary_storage',
+
+    # Api rest
+    'rest_framework',
+    'rest_framework.authtoken',
+
+    #CORS
+    'corsheaders',
+
+    #API
+    'api',
+
+    #Applications
     'pacientes',
     'ficha'
 ]
@@ -44,6 +57,10 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+
+    #CORS
+    'corsheaders.middleware.CorsMiddleware',
+
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -72,7 +89,7 @@ TEMPLATES = [
 LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = 'index'
 WSGI_APPLICATION = 'SigVip.wsgi.application'
-
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -82,8 +99,30 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+    #MySQL
+    #'default': { 
+    #    'ENGINE': 'django.db.backends.mysql',
+    #    'NAME': 'grupo10',
+    #    'USER': 'grupo10',
+    #    'PASSWORD': '198896276',
+    #    'DEFAULT-CHARACTER-SET': 'utf8',
+    #    'HOST': 'grupo10.c5d4mi2dthpc.us-east-1.rds.amazonaws.com',
+    #    'PORT': '3306',
+    #    'TEST': {
+    #        'NAME': 'Gestor_test'
+    #    }
+    #}
 }
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -121,3 +160,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR) + str(MEDIA_URL)
+#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+#CLOUD STORAGE
+#CLOUDINARY_STORAGE = {
+#    'CLOUD_NAME': config('CLOUDINAY_CLOUD_NAME')
+#    'API_KEY': config('CLOUDINAY_API_KEY')
+#    'API_SECRET': config('CLOUDINAY_API_SECRET')
+#}
+
+AUTH_USER_MODEL = "api.User"
