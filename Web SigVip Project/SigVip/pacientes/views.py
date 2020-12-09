@@ -4,6 +4,7 @@ from api.models import Paciente
 from django.contrib.auth.mixins import LoginRequiredMixin,PermissionRequiredMixin
 from django.views.generic.edit import CreateView,UpdateView
 from django.db.models import Q
+
 ####################################### VIEW #######################################
 class HomePageView(LoginRequiredMixin,TemplateView):
     def get(self,request,**kwargs):

@@ -143,9 +143,26 @@ class Tratamiento_TestCase(TestCase):
 class ConsultaMedica_TestCase(TestCase):
     def setUp(self):
         self.tema = "Dolores de cabeza y perdida de vista"
-        self.rut = Paciente.pacientes.create(rut='7575618-6')
-        self.doctor = User.objects.create(nombre='Juan')
-        self.tratamiento = Tratamiento.objects.create(descripcion= "Hacer reposo")
+        self.rut = Paciente.pacientes.create(rut = '12767806-5',
+                                            nombre = 'Juan',
+                                            apellidoP = 'Perez',
+                                            apellidoM = 'Perez',
+                                            edad = 23,
+                                            email = 'Juan.Perez@gmail.com',
+                                            telefono = 9876856,
+                                            direccion = 'La Espuela 6789, Penalolen, Peñalolén, Región Metropolitana')
+
+        self.doctor = User.objects.create(rut = '7575618-6',
+                                            nombre = 'Felipe',
+                                            apellidoP = 'Moran',
+                                            apellidoM = 'Cúneo',
+                                            especialidad = 'Administrador',
+                                            email = 'Felipe.Moran@sigvip.com',
+                                            password = 'Estaesmicontraseña2020')
+
+        self.tratamiento = Tratamiento.objects.create(receta = Receta.objects.create(medicamento="Almaxol"),
+                                                        examen = Examen.objects.create(tipoexamen=TipoExamen.objects.create(texamen="Examen prueba")),
+                                                        descripcion = "Hacer reposo")
         self.diagnostico = "Tumor en la base del craneo"
         self.fecha = datetime.date.today()
 
@@ -157,7 +174,7 @@ class ConsultaMedica_TestCase(TestCase):
                                             fecha = self.fecha)
 
     def test_creacion_ConsultaMedica(self):
-        old_count = ConsultaMedica.objects.count()
+        old_count = ConsultaMedica.fichas.count()
         self.consultamedica.save()
-        new_count = ConsultaMedica.objects.count()
+        new_count = ConsultaMedica.fichas.count()
         self.assertNotEqual(old_count, new_count)

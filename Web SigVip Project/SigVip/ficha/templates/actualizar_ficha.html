@@ -3,18 +3,25 @@
 <h1>Consulta medica</h1>
 {% endblock %}
 {% block content %}
-<div class="container">
-    <br>
-    <div class="card">
-        <form action="" method="POST" class="card-body">
-            {% csrf_token %}
-            <table class="table table-borderless card">
-                {{form.as_table}}
-            </table>
-            <a class="btn btn-danger btn-lg" href="javascript:history.back()" role="button">Cancelar</a>
-            <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="Actualizar()"></input>
-            <a class="btn btn-primary btn-lg" href="{{object.tratamiento_id}}/" role="button">Actualizar tratamiento </a>
-        </form>
+{% load crispy_forms_tags %}
+<br>
+<br>
+<div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+        <div class="card">
+            <form action="" method="POST" class="card-body">
+                {% csrf_token %}
+                {{form | crispy}}
+                <hr>
+                <div class="d-flex justify-content-start"></div>
+                    <a class="btn btn-danger btn-lg" href="javascript:history.back()" role="button">Cancelar</a>
+                    &nbsp;
+                    <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="Actualizar()"></input>
+                    &nbsp;
+                    <a class="btn btn-primary btn-lg" href="{{object.tratamiento_id}}/" role="button">Actualizar tratamiento </a>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 {% endblock %}

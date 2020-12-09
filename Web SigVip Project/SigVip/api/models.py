@@ -3,6 +3,11 @@ from datetime import date
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from api.Validacion_de_Run import verificador_run
 
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from rest_framework.authtoken.models import Token
+from django.conf import settings
+
 class UserManager(BaseUserManager):
     def create_user(self,email,password=None,**extra_fields):
         """Crear un nuevo usuario con email y password"""
@@ -32,6 +37,11 @@ class UserManager(BaseUserManager):
         superuser.save(using=self._db)
         
         return superuser
+
+    @receiver(post_save, sender=settings.AUTH_USER_MODEL)
+    def create_auth_token(sender, instance=None, created=False, **kwargs):
+        if created:
+            Token.objects.create(user=instance)
 
 class User(AbstractBaseUser,PermissionsMixin):
     """Modelo personalizado de usuario"""

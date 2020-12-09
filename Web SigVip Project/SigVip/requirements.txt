@@ -2,3 +2,6 @@ django
 gunicorn
 mysqlclient
 coverage
+django-crispy-forms
+djangorestframework
+django-cors-headers

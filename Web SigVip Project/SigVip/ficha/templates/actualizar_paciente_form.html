@@ -3,18 +3,23 @@
     <h1>Paciente</h1>
 {% endblock %}
 {% block content %}
-    <div class="container">
-        <br>
-           <div class="card">
-                <form action="" method="POST" class="card-body">
-                    {% csrf_token %}
-                        <table class="table table-borderless">
-                           {{form.as_table}}
-                        </table>
-                        <a class="btn btn-primary btn-lg" href="{{request.META.HTTP_REFERER}}" role="button">Cancelar</a>
-                        <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="CrearPaciente()"></input>
-                </form>
-           </div>
-
+{% load crispy_forms_tags %}
+<br>
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3">
+        <div class="card">
+            <form action="" method="POST" class="card-body">
+                {% csrf_token %}
+                {{form | crispy }}
+                <hr>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-danger btn-lg" href="{{request.META.HTTP_REFERER}}" role="button">Cancelar</a>
+                    &nbsp;
+                    <input type="submit" class="btn btn-lg btn-primary " value="Guardar" onclick="Actualizar()"></input>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
+<br>
 {% endblock %}
