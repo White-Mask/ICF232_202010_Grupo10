@@ -34,3 +34,6 @@ Esta carpeta contiene:
 
 ## Hito 2
 * Reporte sprint 2 [Hito 2](https://github.com/White-Mask/ICF232_202010_Grupo10/blob/master/Hito_2.docx)
+
+## Hito 3
+* Reporte sprint 3 [Hito 3](https://github.com/White-Mask/ICF232_202010_Grupo10/blob/master/Hito_3.docx)
